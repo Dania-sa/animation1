@@ -1,0 +1,287 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.parent{
+    position: relative;
+    width: 100%;
+}
+.container{
+    position: absolute;
+    animation-name: contain-ani;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+.container .ring{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ecff;
+    animation: animate 0.5s linear infinite;
+}
+@keyframes animate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes contain-ani{
+    0% {right: 100%;}
+    100% {right: 8%;}
+}
+.container .ring::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ecff;
+    box-shadow: 0 0 0 5px #24ecff33,
+    0 0 0 8px #24ecff33,
+    0 0 0 10px #24ecff33;
+    
+}
+.container .ring:nth-child(2){
+    position: absolute;
+    top:30px;
+}
+
+.container1{
+    position: absolute;
+    top:200px;
+    animation-name: contain-ani1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 8s;
+}
+.container1 .ring1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ecff;
+    animation: animate1 0.5s linear infinite;
+}
+@keyframes animate1{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes contain-ani1{
+    0% {right: 100%;}
+    100% {right:8%;}
+}
+.container1 .ring1::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ecff;
+    box-shadow: 0 0 0 5px #24ecff33,
+    0 0 0 8px #24ecff33,
+    0 0 0 10px #24ecff33;
+    
+}
+.container1 .ring1:nth-child(2){
+    position: absolute;
+    top:30px;
+}
+
+.container2{
+    position: absolute;
+    top:400px;
+    animation-name: contain-ani2;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 16s;
+}
+.container2 .ring2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ecff;
+    animation: animate2 0.5s linear infinite;
+}
+@keyframes animate2{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+@keyframes contain-ani2{
+    0% {right: 100%;}
+    100% {right:8%;}
+}
+.container2 .ring2::before{
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ecff;
+    box-shadow: 0 0 0 5px #24ecff33,
+    0 0 0 8px #24ecff33,
+    0 0 0 10px #24ecff33;
+    
+}
+.container2 .ring2:nth-child(2){
+    position: absolute;
+    top:30px;
+}
+
+.container-ri{
+    position: absolute;
+    top:100px;
+    animation-name: contain-ani-ri;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+}
+.container-ri .ring-ri{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ff45;
+    animation: animate-ri 0.5s linear infinite;
+}
+@keyframes animate-ri{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes contain-ani-ri{
+    0% {right: 8%;}
+    100% {right: 100%;}
+}
+.container-ri .ring-ri::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ff45;
+    box-shadow: 0 0 0 5px #24ff5333,
+    0 0 0 8px #24ff5333,
+    0 0 0 10px #24ff5333;
+    
+}
+.container-ri .ring-ri:nth-child(2){
+    position: absolute;
+    top:30px;
+}
+
+.container-ri1{
+    position: absolute;
+    top:300px;
+    animation-name: contain-ani-ri1;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 12s;
+    animation-fill-mode: backwards;
+}
+.container-ri1 .ring-ri1{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ff45;
+    animation: animate-ri1 0.5s linear infinite;
+}
+@keyframes animate-ri1{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes contain-ani-ri1{
+    0% {right: 8%;}
+    100% {right: 100%;}
+}
+.container-ri1 .ring-ri1::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ff45;
+    box-shadow: 0 0 0 5px #24ff5333,
+    0 0 0 8px #24ff5333,
+    0 0 0 10px #24ff5333;
+    
+}
+.container-ri1 .ring-ri1:nth-child(2){
+    position: absolute;
+    top:30px;
+}
+
+.container-ri2{
+    position: absolute;
+    top:500px;
+    animation-name: contain-ani-ri2;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-delay: 20s;
+    animation-fill-mode: backwards;
+}
+.container-ri2 .ring-ri2{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    /* margin: -30px; */
+    border: 4px solid transparent;
+    border-radius: 50%;
+    border-top: 4px solid #24ff45;
+    animation: animate-ri2 0.5s linear infinite;
+}
+@keyframes animate-ri2{
+    0%{transform: rotate(360deg);}
+    100%{transform: rotate(0deg);}
+}
+@keyframes contain-ani-ri2{
+    0% {right: 8%;}
+    100% {right: 100%;}
+}
+.container-ri2 .ring-ri2::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    right: 75px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #24ff45;
+    box-shadow: 0 0 0 5px #24ff5333,
+    0 0 0 8px #24ff5333,
+    0 0 0 10px #24ff5333;
+    
+}
+.container-ri2 .ring-ri2:nth-child(2){
+    position: absolute;
+    top:30px;
+}
